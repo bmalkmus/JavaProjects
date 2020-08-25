@@ -10,6 +10,11 @@ public class Variables {
         double decimalVariable = 394.007;
         char letter = 'G';
 
+        System.out.println(letter);
         System.out.println(x);
+        System.out.println(bigNumber);
+        System.out.println(smallNumber);
+        System.out.println(decimalVariable);
+        System.out.println(reallySmallNumber);
     }
-}
+}   
