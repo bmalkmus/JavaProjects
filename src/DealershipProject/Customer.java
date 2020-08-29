@@ -11,8 +11,10 @@ public class Customer {
         this.finance=finance;
     }
 
-    public static void wantsToBuyCar(Vehicle car, Employee employee){
-        System.out.println("Hello "+employee.name + " , I would like to buy this " + car.color + " " + car.model);
+    public void wantsToBuyCar(Vehicle car, Employee employee){
+        System.out.println("Hello "+employee.name + ", I would like to buy this " + car.color + " " + car.model);
         System.out.println("Is it available?");
+        employee.sellCar(car, this);
+
     }
 }
