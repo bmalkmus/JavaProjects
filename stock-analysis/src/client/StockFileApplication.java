@@ -28,8 +28,22 @@ public class StockFileApplication {
 	 */
 	public static List<HashMap<String, Double>> populateStockFileData(List<String> headers, List<String> lines){
 		List<HashMap<String, Double>> dataResult = new ArrayList<>();
+		for (String line : lines){
+			String [] splitLine = line.split(",");
+			int counter = 0;
+			HashMap<String, Double> dataLine = new HashMap<>();
+			for (String value : splitLine) {
+				Double numberValue = Double.parseDouble(value);
+				dataLine.put(headers.get(counter), numberValue);
+				counter++;
+			}
+			
+			dataResult.add(dataLine)
+
+		}
 		// Insert your code here..
-		return dataResult;
+
+        return dataResult;
 	}
 	
 	
