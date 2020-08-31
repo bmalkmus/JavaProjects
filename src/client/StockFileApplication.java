@@ -38,7 +38,7 @@ public class StockFileApplication {
 				counter++;
 			}
 			
-			dataResult.add(dataLine)
+			dataResult.add(dataLine);
 
 		}
 		// Insert your code here..
