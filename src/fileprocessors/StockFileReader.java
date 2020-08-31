@@ -40,7 +40,7 @@ public class StockFileReader {
 		try(BufferedReader file = new BufferedReader(new FileReader(filePath))){
 			file.readLine();
 			String line = null;
-			while(line = file.readLine() != null){
+			while((line = file.readLine()) != null){
 				lines.add(line);
 				
 			}
