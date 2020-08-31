@@ -1,4 +1,4 @@
-package ApplicationPractice;
+package DataStructureL1;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -11,7 +11,7 @@ public class Application {
         // words.add(10);
         words.remove(0);
 
-        String item1 = (String) words.get(0);
+        // String item1 = (String) words.get(0);
 
         LinkedList<Integer> numbers = new LinkedList<Integer>();
         numbers.add(100);
